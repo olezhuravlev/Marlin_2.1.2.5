@@ -126,3 +126,5 @@
 #define UART4_RX_PIN                        PC11  // default usage TMC UART
 #define UART5_TX_PIN                        PC12  // default usage POWER_LOSS_PIN
 #define UART5_RX_PIN                        PD2   // default usage E0_ENABLE_PIN
+
+#define PS_ON_PIN                           PC15
