@@ -1197,7 +1197,7 @@
  * Override with M92
  *                                      X, Y, Z [, I [, J [, K...]]], E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 406 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80.36, 80.27, 400, 406 }
 
 /**
  * Default Max Feed Rate (linear=mm/s, rotational=°/s)
@@ -2248,16 +2248,22 @@
 // Preheat Constants - Up to 10 are supported without changes
 //
 #define PREHEAT_1_LABEL       "PLA"
-#define PREHEAT_1_TEMP_HOTEND 185
-#define PREHEAT_1_TEMP_BED     45
-#define PREHEAT_1_TEMP_CHAMBER 35
-#define PREHEAT_1_FAN_SPEED   255 // Value from 0 to 255
+#define PREHEAT_1_TEMP_HOTEND  185
+#define PREHEAT_1_TEMP_BED      45
+#define PREHEAT_1_TEMP_CHAMBER  35
+#define PREHEAT_1_FAN_SPEED      0 // Value from 0 to 255
 
-#define PREHEAT_2_LABEL       "ABS"
-#define PREHEAT_2_TEMP_HOTEND 240
-#define PREHEAT_2_TEMP_BED    110
-#define PREHEAT_2_TEMP_CHAMBER 35
-#define PREHEAT_2_FAN_SPEED   255 // Value from 0 to 255
+#define PREHEAT_2_LABEL      "PETG"
+#define PREHEAT_2_TEMP_HOTEND  210
+#define PREHEAT_2_TEMP_BED      60
+#define PREHEAT_2_TEMP_CHAMBER  35
+#define PREHEAT_2_FAN_SPEED      0 // Value from 0 to 255
+
+#define PREHEAT_3_LABEL       "ABS"
+#define PREHEAT_3_TEMP_HOTEND  240
+#define PREHEAT_3_TEMP_BED     110
+#define PREHEAT_3_TEMP_CHAMBER  35
+#define PREHEAT_3_FAN_SPEED      0 // Value from 0 to 255
 
 /**
  * @section nozzle park
